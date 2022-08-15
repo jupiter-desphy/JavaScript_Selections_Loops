@@ -49,3 +49,37 @@ while (bf <= 100) {
     }
     bf++;
 }
+
+// Exercise 4 Section
+
+let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+for (let x4 = 1; x4 <=n; x4++) {
+    if (x4 === value) {
+        console.log ('Found value!')
+        break;
+    } else {
+        console.log ('Did not find value')
+    }
+}
+
+// Exercise 5 Section
+
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let n5 = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+for (let i=start; i <= n5; i++) {
+    if (fizzDivisor && buzzDivisor) {
+        console.log ('FIZZBUZZ', i)
+    }
+    else if (fizzDivisor) {
+        console.log ('FIZZ', i)
+    }
+    else if (buzzDivisor) {
+        console.log ('BUZZ', i)
+    }
+
+}
