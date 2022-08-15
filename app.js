@@ -81,5 +81,4 @@ for (let i=start; i <= n5; i++) {
     else if (buzzDivisor) {
         console.log ('BUZZ', i)
     }
-
 }
